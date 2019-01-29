@@ -1,0 +1,33 @@
+<resources>
+    <!--  Titles -->
+    <string name="app_name">CapitalCalc</string>
+    <string name="app_subtitle">A Compound Interest Calculator</string>
+    <string name="app_author">By Charlie Williams</string>
+    <string name="app_logo_description">App Logo</string>
+
+    <!--  Buttons -->
+    <string name="splash_button">Continue</string>
+    <string name="calculate_button">Calculate</string>
+    <string name="return_button">Return</string>
+
+    <!--  Calculator Descriptions -->
+    <string name="principal_amount">Principal Amount</string>
+    <string name="annual_interest_rate">Annual Interest Rate</string>
+    <string name="calculation_period">Calculation Period</string>
+    <string name="compound_interval">Compound Interval</string>
+    <string name="regular_monthly_deposit_switch">Regular Monthly Deposits?&#xA;(Requires monthly compounding)</string>
+    <string name="deposit_amount">Deposit Amount</string>
+
+    <!--  Calculator Hints -->
+    <string name="principal_amount_hint">Value in £</string>
+    <string name="annual_interest_rate_hint">Value in %</string>
+    <string name="calculation_period_hint">Number of years</string>
+
+    <!--  Radio Button Time Intervals -->
+    <string name="radio_daily_interval">Daily</string>
+    <string name="radio_monthly_interval">Monthly</string>
+    <string name="radio_quarterly_interval">Quarterly</string>
+    <string name="radio_biannually_interval">Biannually</string>
+    <string name="radio_annually_interval">Annually</string>
+
+</resources>
