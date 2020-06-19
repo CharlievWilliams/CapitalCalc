@@ -10,6 +10,7 @@ data class SplashViewState(
 
 sealed class SplashViewEvent {
     object ScreenLoadEvent : SplashViewEvent()
+    object SplashButtonPressedEvent : SplashViewEvent()
 }
 
 sealed class SplashNavigationEffect {
