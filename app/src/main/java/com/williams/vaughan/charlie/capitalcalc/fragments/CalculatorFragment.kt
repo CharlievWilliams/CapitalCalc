@@ -5,31 +5,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import com.williams.vaughan.charlie.capitalcalc.databinding.FragmentCalculatorBinding
+import com.williams.vaughan.charlie.capitalcalc.R
 import com.williams.vaughan.charlie.capitalcalc.viewmodels.CalculatorViewModel
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent.ScreenLoadEvent
-import javax.inject.Inject
 
-class CalculatorFragment @Inject constructor(
-    private val viewModelFactory: ViewModelProvider.Factory
-) : Fragment() {
+class CalculatorFragment : Fragment() {
 
-    private var _binding: FragmentCalculatorBinding? = null
-
-    private val binding get() = _binding!!
-
-    private val viewModel by activityViewModels<CalculatorViewModel> { viewModelFactory }
+    private val viewModel: CalculatorViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentCalculatorBinding.inflate(inflater, container, false)
-        return binding.root
+        return inflater.inflate(R.layout.fragment_calculator, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -46,10 +37,5 @@ class CalculatorFragment @Inject constructor(
 
     private fun setupViewEvents() {
         viewModel.onEvent(ScreenLoadEvent)
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }

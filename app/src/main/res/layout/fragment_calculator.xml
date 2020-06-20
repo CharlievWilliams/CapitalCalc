@@ -27,14 +27,14 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/principalAmount"
                 android:layout_width="165dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:text="@string/principal_amount" />
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/principalAmountEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -53,14 +53,14 @@
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/annualInterestRate"
                 android:layout_width="165dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:text="@string/annual_interest_rate" />
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/annualInterestRateEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -79,14 +79,14 @@
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/calculationPeriod"
                 android:layout_width="165dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:text="@string/calculation_period" />
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/calculationPeriodEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -96,6 +96,7 @@
                 android:inputType="number"
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
+
         </LinearLayout>
 
         <!-- Radio Button Group Linear Layout -->
@@ -105,7 +106,7 @@
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/compoundInterval"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -119,40 +120,41 @@
                 android:layout_weight="0.5"
                 android:checkedButton="@+id/monthlyRadioButton">
 
-                <RadioButton
+                <androidx.appcompat.widget.AppCompatRadioButton
                     android:id="@+id/dailyRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/radio_daily_interval" />
 
-                <RadioButton
+                <androidx.appcompat.widget.AppCompatRadioButton
                     android:id="@+id/monthlyRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/radio_monthly_interval" />
 
-                <RadioButton
+                <androidx.appcompat.widget.AppCompatRadioButton
                     android:id="@+id/quarterlyRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/radio_quarterly_interval" />
 
-                <RadioButton
+                <androidx.appcompat.widget.AppCompatRadioButton
                     android:id="@+id/biannuallyRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/radio_biannually_interval" />
 
-                <RadioButton
+                <androidx.appcompat.widget.AppCompatRadioButton
                     android:id="@+id/annuallyRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/radio_annually_interval" />
+
             </RadioGroup>
 
         </LinearLayout>
@@ -164,7 +166,7 @@
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
-            <Switch
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/monthlyContributionActivationSwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -172,6 +174,7 @@
                 android:layout_weight="1"
                 android:text="@string/regular_monthly_deposit_switch"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
+
         </LinearLayout>
 
         <!-- Deposit Amount Linear Layout -->
@@ -181,14 +184,14 @@
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/depositAmount"
                 android:layout_width="165dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:text="@string/deposit_amount" />
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/depositAmountEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -198,9 +201,10 @@
                 android:inputType="number"
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
+
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/calculateButton"
             android:layout_width="match_parent"
             android:layout_height="45dp"
@@ -210,4 +214,5 @@
             android:textColor="@color/colorPrimary" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
