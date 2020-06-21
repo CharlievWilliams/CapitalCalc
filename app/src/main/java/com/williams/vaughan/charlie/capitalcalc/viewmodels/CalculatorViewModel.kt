@@ -7,12 +7,14 @@ import com.williams.vaughan.charlie.capitalcalc.extensions.Event
 import com.williams.vaughan.charlie.capitalcalc.usecases.RetrieveTotalAmountUseCase
 import com.williams.vaughan.charlie.capitalcalc.usecases.RetrieveTotalAmountUseCaseParams
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorNavigationEffect
+import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorNavigationEffect.NavigateToResultEffect
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEffect
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEffect.ShowToastEffect
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent.CalculateButtonPressed
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent.ScreenLoadEvent
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewState
+import kotlinx.coroutines.runBlocking
 
 class CalculatorViewModel(
     private val retrieveTotalAmountUseCase: RetrieveTotalAmountUseCase
