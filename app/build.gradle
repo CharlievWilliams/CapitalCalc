@@ -8,7 +8,7 @@ android {
     compileSdkVersion 29
     defaultConfig {
         applicationId "com.williams.vaughan.charlie.capitalcalc"
-        minSdkVersion 26
+        minSdkVersion 23
         targetSdkVersion 29
         versionCode 3
         versionName "1.02"

@@ -7,11 +7,15 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import com.williams.vaughan.charlie.capitalcalc.R
+import com.williams.vaughan.charlie.capitalcalc.databinding.FragmentCalculatorBinding
 import com.williams.vaughan.charlie.capitalcalc.viewmodels.CalculatorViewModel
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent.ScreenLoadEvent
 
 class CalculatorFragment : Fragment() {
+
+    private var _binding: FragmentCalculatorBinding? = null
+
+    private val binding get() = _binding!!
 
     private val viewModel: CalculatorViewModel by viewModels()
 
@@ -20,7 +24,8 @@ class CalculatorFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_calculator, container, false)
+        _binding = FragmentCalculatorBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,5 +42,10 @@ class CalculatorFragment : Fragment() {
 
     private fun setupViewEvents() {
         viewModel.onEvent(ScreenLoadEvent)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

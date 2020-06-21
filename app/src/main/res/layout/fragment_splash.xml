@@ -60,7 +60,7 @@
         android:id="@+id/splash_button"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:background="@drawable/buttonpink"
+        android:background="@drawable/button_pink"
         android:text="@string/splash_button"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
