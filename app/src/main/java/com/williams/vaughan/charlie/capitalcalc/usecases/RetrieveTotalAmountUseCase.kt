@@ -18,7 +18,7 @@ class RetrieveTotalAmountUseCase(
             return if (principalAmount == null ||
                 annualInterestRate == null ||
                 calculationPeriod == null ||
-                depositAmount == null
+                (depositAmount == null && monthlyDeposits)
             ) {
                 UseCaseResults(false, "", "")
             } else if (monthlyDeposits) {
@@ -34,7 +34,13 @@ class RetrieveTotalAmountUseCase(
         with(results) {
             val p = principalAmount
             val r = annualInterestRate
-            val n = BigDecimal(0)
+            val n = when (compoundInterval) {
+                DAILY -> BigDecimal(365)
+                MONTHLY -> BigDecimal(12)
+                QUARTERLY -> BigDecimal(4)
+                BIANNUALLY -> BigDecimal(2)
+                ANNUALLY -> BigDecimal(1)
+            }
             val t = calculationPeriod
 
             val brackets = BigDecimal(1).add(r?.divide(n, MathContext.DECIMAL128))
@@ -47,30 +53,7 @@ class RetrieveTotalAmountUseCase(
     }
 
     private fun performMonthlyDepositCalculation(results: UsableUseCaseParams): UseCaseResults {
-        with(results) {
-            return when (depositAmount == null) {
-                true -> UseCaseResults(false, "", "")
-                false -> {
-                    val p = principalAmount
-                    val r = annualInterestRate
-                    val n = when (compoundInterval) {
-                        DAILY -> BigDecimal(365)
-                        MONTHLY -> BigDecimal(12)
-                        QUARTERLY -> BigDecimal(4)
-                        BIANNUALLY -> BigDecimal(2)
-                        ANNUALLY -> BigDecimal(1)
-                    }
-                    val t = calculationPeriod
-
-                    val brackets = BigDecimal(1).add(r?.divide(n, MathContext.DECIMAL128))
-                    val upper = t?.let { n.times(it) }
-                    val main = upper?.let { brackets.times(it) }
-                    val amount = main?.let { p?.times(it) }
-
-                    return UseCaseResults(true, amount.toString(), calculationPeriod.toString())
-                }
-            }
-        }
+        return UseCaseResults(false, "", "")
     }
 }
 

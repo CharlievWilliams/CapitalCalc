@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.williams.vaughan.charlie.capitalcalc.R
 import com.williams.vaughan.charlie.capitalcalc.databinding.FragmentCalculatorBinding
 import com.williams.vaughan.charlie.capitalcalc.extensions.observeEvent
+import com.williams.vaughan.charlie.capitalcalc.usecases.UseCaseResults
 import com.williams.vaughan.charlie.capitalcalc.viewmodels.CalculatorViewModel
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorNavigationEffect.NavigateToResultEffect
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEffect.ShowToastEffect
@@ -74,19 +75,24 @@ class CalculatorFragment : Fragment() {
     }
 
     private fun showToast() {
-        Toast.makeText(context, getString(R.string.app_subtitle), Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, getString(R.string.toast_error), Toast.LENGTH_SHORT).show()
     }
 
     private fun setupNavigationEffects() {
         viewModel.getNavigationEffect().observeEvent(viewLifecycleOwner, Observer {
             when (it) {
-                is NavigateToResultEffect -> navigateToResult()
+                is NavigateToResultEffect -> navigateToResult(it.useCaseResults)
             }
         })
     }
 
-    private fun navigateToResult() {
-        findNavController().navigate(R.id.action_calculatorFragment_to_resultFragment)
+    private fun navigateToResult(useCaseResults: UseCaseResults) {
+        with(useCaseResults) {
+            findNavController().navigate(
+                R.id.action_calculatorFragment_to_resultFragment,
+                ResultFragmentArgs(totalAmount, timePeriod).toBundle()
+            )
+        }
     }
 
     override fun onDestroyView() {

@@ -1,5 +1,7 @@
 package com.williams.vaughan.charlie.capitalcalc.viewstates
 
+import com.williams.vaughan.charlie.capitalcalc.usecases.UseCaseResults
+
 data class CalculatorViewState(
     private val principalAmount: String,
     private val annualInterestRate: String,
@@ -26,5 +28,7 @@ sealed class CalculatorViewEffect {
 }
 
 sealed class CalculatorNavigationEffect {
-    object NavigateToResultEffect : CalculatorNavigationEffect()
+    data class NavigateToResultEffect(
+        val useCaseResults: UseCaseResults
+    ) : CalculatorNavigationEffect()
 }

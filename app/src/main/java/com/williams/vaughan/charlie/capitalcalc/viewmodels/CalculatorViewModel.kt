@@ -81,7 +81,7 @@ class CalculatorViewModel(
             )
         }
         when (results.success) {
-            true -> navigationEffect.value = Event(NavigateToResultEffect)
+            true -> navigationEffect.value = Event(NavigateToResultEffect(results))
             false -> viewEffect.value = Event(ShowToastEffect)
         }
     }

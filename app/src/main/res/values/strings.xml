@@ -31,4 +31,7 @@
     <string name="radio_biannually_interval">Biannually</string>
     <string name="radio_annually_interval">Annually</string>
 
+    <!--  General -->
+    <string name="toast_error">Have you entered everything correctly?</string>
+
 </resources>

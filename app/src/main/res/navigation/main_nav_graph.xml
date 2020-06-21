@@ -7,24 +7,35 @@
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.williams.vaughan.charlie.capitalcalc.fragments.SplashFragment"
-        android:label="SplashFragment"
+        android:label="CapitalCalc"
         tools:layout="@layout/fragment_splash">
         <action
             android:id="@+id/action_splashFragment_to_calculatorFragment"
-            app:destination="@id/calculatorFragment" />
+            app:destination="@id/calculatorFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
     </fragment>
     <fragment
         android:id="@+id/calculatorFragment"
         android:name="com.williams.vaughan.charlie.capitalcalc.fragments.CalculatorFragment"
-        android:label="fragment_calculator"
-        tools:layout="@layout/fragment_calculator" >
+        android:label="Calculator"
+        tools:layout="@layout/fragment_calculator">
         <action
             android:id="@+id/action_calculatorFragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
+            app:destination="@id/resultFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.williams.vaughan.charlie.capitalcalc.fragments.ResultFragment"
-        android:label="fragment_result"
-        tools:layout="@layout/fragment_result" />
+        android:label="Results"
+        tools:layout="@layout/fragment_result">
+        <argument
+            android:name="amount"
+            app:argType="string" />
+        <argument
+            android:name="calculation_period"
+            app:argType="string" />
+    </fragment>
 </navigation>

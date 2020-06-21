@@ -6,6 +6,7 @@ data class ResultViewState(
 
 sealed class ResultViewEvent {
     object ScreenLoadEvent : ResultViewEvent()
+    object ReturnPressedEvent : ResultViewEvent()
 }
 
 sealed class ResultNavigationEffect {
