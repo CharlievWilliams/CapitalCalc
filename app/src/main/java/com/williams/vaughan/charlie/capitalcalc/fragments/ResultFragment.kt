@@ -5,11 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.williams.vaughan.charlie.capitalcalc.databinding.FragmentResultBinding
 import com.williams.vaughan.charlie.capitalcalc.viewmodels.ResultViewModel
 import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultViewEvent.ScreenLoadEvent
+import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 class ResultFragment : Fragment() {
 
@@ -17,7 +17,7 @@ class ResultFragment : Fragment() {
 
     private val binding get() = _binding!!
 
-    private val viewModel: ResultViewModel by viewModels()
+    private lateinit var viewModel: ResultViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,6 +30,7 @@ class ResultFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        viewModel = getViewModel()
         setupViewState()
         setupViewEvents()
     }
