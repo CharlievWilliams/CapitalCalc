@@ -6,12 +6,12 @@
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/displayTotalTimePeriodTextView"
+        android:id="@+id/total_time_period_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/small_margin"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toTopOf="@+id/displayTotalTextView"
+        app:layout_constraintBottom_toTopOf="@+id/total_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,27 +19,27 @@
         tools:text="Title" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/displayTotalTextView"
+        android:id="@+id/total_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/large_margin"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toTopOf="@+id/splashButton"
+        app:layout_constraintBottom_toTopOf="@+id/splash_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/displayTotalTimePeriodTextView"
+        app:layout_constraintTop_toBottomOf="@id/total_time_period_text_view"
         tools:text="Subtitle" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/splashButton"
+        android:id="@+id/splash_button"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:background="@drawable/buttonblue"
+        android:background="@drawable/button_blue"
         android:text="@string/return_button"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/displayTotalTextView" />
+        app:layout_constraintTop_toBottomOf="@id/total_text_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
