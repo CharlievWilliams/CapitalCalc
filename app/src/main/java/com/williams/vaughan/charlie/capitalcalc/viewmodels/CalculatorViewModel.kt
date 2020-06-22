@@ -14,11 +14,18 @@ import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent.CalculateButtonPressed
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent.ScreenLoadEvent
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewState
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import kotlin.coroutines.CoroutineContext
 
 class CalculatorViewModel(
     private val retrieveTotalAmountUseCase: RetrieveTotalAmountUseCase
-) : ViewModel() {
+) : ViewModel(), CoroutineScope {
+
+    override val coroutineContext: CoroutineContext
+        get() = (Dispatchers.Default)
 
     private val viewState: MutableLiveData<CalculatorViewState> = MutableLiveData()
     private val viewEffect = MutableLiveData<Event<CalculatorViewEffect>>()
@@ -68,8 +75,8 @@ class CalculatorViewModel(
             depositAmount = depositAmount
         )
 
-        val results = runBlocking {
-            retrieveTotalAmountUseCase.execute(
+        launch(Dispatchers.Default) {
+            val results = retrieveTotalAmountUseCase.execute(
                 RetrieveTotalAmountUseCaseParams(
                     principalAmount,
                     annualInterestRate,
@@ -79,10 +86,12 @@ class CalculatorViewModel(
                     depositAmount
                 )
             )
-        }
-        when (results.success) {
-            true -> navigationEffect.value = Event(NavigateToResultEffect(results))
-            false -> viewEffect.value = Event(ShowToastEffect)
+            withContext(Dispatchers.Main) {
+                when (results.success) {
+                    true -> navigationEffect.value = Event(NavigateToResultEffect(results))
+                    false -> viewEffect.value = Event(ShowToastEffect)
+                }
+            }
         }
     }
 
