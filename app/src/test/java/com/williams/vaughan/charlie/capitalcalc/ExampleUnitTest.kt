@@ -6,7 +6,7 @@ import org.junit.Test
 class ExampleUnitTest {
 
     @Test
-    fun addition_isCorrect() {
+    fun `asset 2 + 2 = 4`() {
         // Given
 
         // When
