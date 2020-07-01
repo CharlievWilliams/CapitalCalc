@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.williams.vaughan.charlie.capitalcalc.R
@@ -15,7 +14,7 @@ import com.williams.vaughan.charlie.capitalcalc.viewmodels.SplashViewModel
 import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashNavigationEffect.NavigateToCalculatorEffect
 import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashViewEvent.ScreenLoadEvent
 import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashViewEvent.SplashButtonPressedEvent
-import kotlinx.android.synthetic.main.fragment_splash.*
+import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 class SplashFragment : Fragment() {
 
@@ -23,7 +22,7 @@ class SplashFragment : Fragment() {
 
     private val binding get() = _binding!!
 
-    private val viewModel: SplashViewModel by viewModels()
+    private lateinit var viewModel: SplashViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,6 +35,7 @@ class SplashFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        viewModel = getViewModel()
         setupViewState()
         setupViewEvents()
         setupNavigationEffects()
@@ -43,9 +43,7 @@ class SplashFragment : Fragment() {
 
     private fun setupViewState() {
         viewModel.viewState().observe(viewLifecycleOwner, Observer {
-            splash_button.setOnClickListener {
-                viewModel.onEvent(SplashButtonPressedEvent)
-            }
+            binding.splashButton.setOnClickListener { viewModel.onEvent(SplashButtonPressedEvent) }
         })
     }
 
