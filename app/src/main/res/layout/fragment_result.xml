@@ -3,7 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <com.robinhood.spark.SparkView
+        android:id="@+id/spark_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chart_height"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_marginBottom="@dimen/large_margin"
+        app:layout_constraintBottom_toTopOf="@id/total_time_period_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/total_time_period_text_view"
@@ -11,19 +25,23 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/small_margin"
         android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/total_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/spark_view"
         tools:text="Title" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/total_text_view"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginEnd="@dimen/large_margin"
         android:layout_marginBottom="@dimen/large_margin"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/splash_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

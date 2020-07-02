@@ -39,9 +39,7 @@ class CalculatorViewModel(
                     principalAmount,
                     annualInterestRate,
                     calculationPeriod,
-                    compoundInterval,
-                    monthlyDeposits,
-                    depositAmount
+                    compoundInterval
                 )
             }
         }
@@ -52,7 +50,7 @@ class CalculatorViewModel(
             principalAmount = "",
             annualInterestRate = "",
             calculationPeriod = "",
-            compoundInterval = 2,
+            compoundInterval = 1,
             monthlyDeposits = false,
             depositAmount = ""
         )
@@ -62,17 +60,13 @@ class CalculatorViewModel(
         principalAmount: String,
         annualInterestRate: String,
         calculationPeriod: String,
-        compoundInterval: Int,
-        monthlyDeposits: Boolean,
-        depositAmount: String
+        compoundInterval: Int
     ) {
         viewState.value = viewState.value?.copy(
             principalAmount = principalAmount,
             annualInterestRate = annualInterestRate,
             calculationPeriod = calculationPeriod,
-            compoundInterval = compoundInterval,
-            monthlyDeposits = monthlyDeposits,
-            depositAmount = depositAmount
+            compoundInterval = compoundInterval
         )
 
         launch(Dispatchers.Default) {
@@ -81,9 +75,7 @@ class CalculatorViewModel(
                     principalAmount,
                     annualInterestRate,
                     calculationPeriod,
-                    compoundInterval,
-                    monthlyDeposits,
-                    depositAmount
+                    compoundInterval
                 )
             )
             withContext(Dispatchers.Main) {

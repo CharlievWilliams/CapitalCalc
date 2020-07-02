@@ -37,5 +37,8 @@
         <argument
             android:name="calculation_period"
             app:argType="string" />
+        <argument
+            android:name="chart_data"
+            app:argType="float[]" />
     </fragment>
 </navigation>
