@@ -11,9 +11,7 @@
         tools:layout="@layout/fragment_splash">
         <action
             android:id="@+id/action_splashFragment_to_calculatorFragment"
-            app:destination="@id/calculatorFragment"
-            app:enterAnim="@anim/fragment_open_enter"
-            app:popExitAnim="@anim/fragment_close_exit" />
+            app:destination="@id/calculatorFragment" />
     </fragment>
     <fragment
         android:id="@+id/calculatorFragment"
@@ -22,9 +20,7 @@
         tools:layout="@layout/fragment_calculator">
         <action
             android:id="@+id/action_calculatorFragment_to_resultFragment"
-            app:destination="@id/resultFragment"
-            app:enterAnim="@anim/fragment_open_enter"
-            app:popExitAnim="@anim/fragment_close_exit" />
+            app:destination="@id/resultFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -37,5 +33,8 @@
         <argument
             android:name="calculation_period"
             app:argType="string" />
+        <argument
+            android:name="chart_data"
+            app:argType="float[]" />
     </fragment>
 </navigation>

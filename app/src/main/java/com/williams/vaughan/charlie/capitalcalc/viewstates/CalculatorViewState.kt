@@ -17,9 +17,7 @@ sealed class CalculatorViewEvent {
         val principalAmount: String,
         val annualInterestRate: String,
         val calculationPeriod: String,
-        val compoundInterval: Int,
-        val monthlyDeposits: Boolean,
-        val depositAmount: String
+        val compoundInterval: Int
     ) : CalculatorViewEvent()
 }
 

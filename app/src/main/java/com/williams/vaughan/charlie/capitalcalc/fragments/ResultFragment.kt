@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
+import com.robinhood.spark.SparkView.OnScrubListener
+import com.williams.vaughan.charlie.capitalcalc.MySparkAdapter
+import com.williams.vaughan.charlie.capitalcalc.R
 import com.williams.vaughan.charlie.capitalcalc.databinding.FragmentResultBinding
 import com.williams.vaughan.charlie.capitalcalc.extensions.observeEvent
 import com.williams.vaughan.charlie.capitalcalc.viewmodels.ResultViewModel
@@ -14,6 +17,7 @@ import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultNavigationEffec
 import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultViewEvent.ReturnPressedEvent
 import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultViewEvent.ScreenLoadEvent
 import org.koin.androidx.viewmodel.ext.android.getViewModel
+
 
 class ResultFragment : Fragment() {
 
@@ -38,6 +42,7 @@ class ResultFragment : Fragment() {
         setupViewState()
         setupViewEvents()
         setupNavigationEffects()
+        setupChart()
     }
 
     private fun setupViewState() {
@@ -45,8 +50,10 @@ class ResultFragment : Fragment() {
             val safeArgs = ResultFragmentArgs.fromBundle(it)
             viewModel.viewState().observe(viewLifecycleOwner, Observer {
                 binding.splashButton.setOnClickListener { viewModel.onEvent(ReturnPressedEvent) }
-                binding.totalTextView.text = safeArgs.amount
-                binding.totalTimePeriodTextView.text = safeArgs.calculationPeriod
+                binding.totalTextView.text = getString(R.string.scrub_format, safeArgs.amount)
+                binding.totalTimePeriodTextView.text =
+                    getString(R.string.time_period_format, safeArgs.calculationPeriod)
+                binding.sparkView.adapter = MySparkAdapter(safeArgs.chartData)
             })
         }
     }
@@ -61,6 +68,15 @@ class ResultFragment : Fragment() {
                 is NavigateToCalculatorEffect -> findNavController().popBackStack()
             }
         })
+    }
+
+    private fun setupChart() {
+        binding.sparkView.scrubListener = OnScrubListener {
+            when (it == null) {
+                true -> binding.scrubText.text = ""
+                false -> binding.scrubText.text = getString(R.string.scrub_format, it)
+            }
+        }
     }
 
     override fun onDestroyView() {

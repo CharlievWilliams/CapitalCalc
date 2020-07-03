@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/principal_amount_text_view"
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/large_margin"
         android:hint="@string/principal_amount_hint"
+        android:inputType="number"
         android:maxLength="14"
         android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="@+id/principal_amount_text_view"
@@ -45,7 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/large_margin"
         android:hint="@string/annual_interest_rate_hint"
-        android:maxLength="5"
+        android:inputType="number"
+        android:maxLength="4"
         android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="@+id/annual_interest_rate_text_view"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +72,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/large_margin"
         android:hint="@string/calculation_period_hint"
-        android:maxLength="3"
+        android:inputType="number"
+        android:maxLength="2"
         android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="@+id/calculation_period_text_view"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +87,7 @@
         android:layout_marginStart="@dimen/large_margin"
         android:layout_marginTop="@dimen/large_margin"
         android:text="@string/compound_interval"
-        app:layout_constraintBottom_toTopOf="@id/monthly_deposits_switch"
+        app:layout_constraintBottom_toTopOf="@+id/calculate_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/calculation_period_text_view" />
 
@@ -91,33 +95,9 @@
         android:id="@+id/radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:checkedButton="@+id/monthly_radio_button"
+        android:checkedButton="@+id/annually_radio_button"
         app:layout_constraintStart_toStartOf="@+id/calculation_period_edit_text"
         app:layout_constraintTop_toTopOf="@id/compound_interval_text_view">
-
-        <androidx.appcompat.widget.AppCompatRadioButton
-            android:id="@+id/daily_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_daily_interval" />
-
-        <androidx.appcompat.widget.AppCompatRadioButton
-            android:id="@+id/monthly_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_monthly_interval" />
-
-        <androidx.appcompat.widget.AppCompatRadioButton
-            android:id="@+id/quarterly_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_quarterly_interval" />
-
-        <androidx.appcompat.widget.AppCompatRadioButton
-            android:id="@+id/biannually_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_biannually_interval" />
 
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/annually_radio_button"
@@ -126,44 +106,6 @@
             android:text="@string/radio_annually_interval" />
 
     </RadioGroup>
-
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/monthly_deposits_switch"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/large_margin"
-        android:layout_marginTop="@dimen/huge_margin"
-        android:layout_marginEnd="@dimen/large_margin"
-        android:text="@string/regular_monthly_deposit_switch"
-        app:layout_constraintBottom_toTopOf="@id/deposit_amount_text_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/compound_interval_text_view" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/deposit_amount_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/large_margin"
-        android:layout_marginTop="@dimen/large_margin"
-        android:text="@string/deposit_amount"
-        app:layout_constraintBottom_toTopOf="@id/calculate_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/monthly_deposits_switch"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/deposit_amount_edit_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/large_margin"
-        android:hint="@string/principal_amount_hint"
-        android:maxLength="10"
-        android:maxLines="1"
-        app:layout_constraintBottom_toBottomOf="@+id/deposit_amount_text_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/deposit_amount_text_view"
-        app:layout_constraintWidth_percent="0.4" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/calculate_button"

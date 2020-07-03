@@ -32,6 +32,8 @@
     <string name="radio_annually_interval">Annually</string>
 
     <!--  General -->
-    <string name="toast_error">Have you entered everything correctly?</string>
+    <string name="toast_error">Please enter all values</string>
+    <string name="scrub_format">£%1$s</string>
+    <string name="time_period_format">In %1$s years you will have</string>
 
 </resources>

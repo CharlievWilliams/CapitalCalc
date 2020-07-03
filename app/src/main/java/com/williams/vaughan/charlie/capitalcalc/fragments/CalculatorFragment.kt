@@ -53,9 +53,7 @@ class CalculatorFragment : Fragment() {
                         binding.principalAmountEditText.text.toString(),
                         binding.annualInterestRateEditText.text.toString(),
                         binding.calculationPeriodEditText.text.toString(),
-                        binding.radioGroup.checkedRadioButtonId,
-                        binding.monthlyDepositsSwitch.isChecked,
-                        binding.depositAmountEditText.text.toString()
+                        binding.radioGroup.checkedRadioButtonId
                     )
                 )
             }
@@ -90,7 +88,7 @@ class CalculatorFragment : Fragment() {
         with(useCaseResults) {
             findNavController().navigate(
                 R.id.action_calculatorFragment_to_resultFragment,
-                ResultFragmentArgs(totalAmount, timePeriod).toBundle()
+                ResultFragmentArgs(totalAmount, timePeriod, chartData).toBundle()
             )
         }
     }

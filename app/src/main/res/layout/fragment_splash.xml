@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/logo"
@@ -23,8 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/medium_margin"
         android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toTopOf="@+id/appSubtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +38,7 @@
         android:layout_marginBottom="@dimen/small_margin"
         android:text="@string/app_subtitle"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/appAuthor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +51,7 @@
         android:layout_marginBottom="@dimen/large_margin"
         android:text="@string/app_author"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@id/splash_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

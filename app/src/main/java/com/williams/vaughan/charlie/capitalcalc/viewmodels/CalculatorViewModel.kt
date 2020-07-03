@@ -14,11 +14,18 @@ import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent.CalculateButtonPressed
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent.ScreenLoadEvent
 import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewState
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import kotlin.coroutines.CoroutineContext
 
 class CalculatorViewModel(
     private val retrieveTotalAmountUseCase: RetrieveTotalAmountUseCase
-) : ViewModel() {
+) : ViewModel(), CoroutineScope {
+
+    override val coroutineContext: CoroutineContext
+        get() = (Dispatchers.Default)
 
     private val viewState: MutableLiveData<CalculatorViewState> = MutableLiveData()
     private val viewEffect = MutableLiveData<Event<CalculatorViewEffect>>()
@@ -32,9 +39,7 @@ class CalculatorViewModel(
                     principalAmount,
                     annualInterestRate,
                     calculationPeriod,
-                    compoundInterval,
-                    monthlyDeposits,
-                    depositAmount
+                    compoundInterval
                 )
             }
         }
@@ -45,7 +50,7 @@ class CalculatorViewModel(
             principalAmount = "",
             annualInterestRate = "",
             calculationPeriod = "",
-            compoundInterval = 2,
+            compoundInterval = 1,
             monthlyDeposits = false,
             depositAmount = ""
         )
@@ -55,34 +60,36 @@ class CalculatorViewModel(
         principalAmount: String,
         annualInterestRate: String,
         calculationPeriod: String,
-        compoundInterval: Int,
-        monthlyDeposits: Boolean,
-        depositAmount: String
+        compoundInterval: Int
     ) {
         viewState.value = viewState.value?.copy(
             principalAmount = principalAmount,
             annualInterestRate = annualInterestRate,
             calculationPeriod = calculationPeriod,
-            compoundInterval = compoundInterval,
-            monthlyDeposits = monthlyDeposits,
-            depositAmount = depositAmount
+            compoundInterval = compoundInterval
         )
 
-        val results = runBlocking {
-            retrieveTotalAmountUseCase.execute(
-                RetrieveTotalAmountUseCaseParams(
-                    principalAmount,
-                    annualInterestRate,
-                    calculationPeriod,
-                    compoundInterval,
-                    monthlyDeposits,
-                    depositAmount
-                )
-            )
-        }
-        when (results.success) {
-            true -> navigationEffect.value = Event(NavigateToResultEffect(results))
-            false -> viewEffect.value = Event(ShowToastEffect)
+        launch(Dispatchers.Default) {
+            val isValid =
+                principalAmount.isNotEmpty() && annualInterestRate.isNotEmpty() && calculationPeriod.isNotEmpty()
+            when (isValid) {
+                true -> {
+                    val results = retrieveTotalAmountUseCase.execute(
+                        RetrieveTotalAmountUseCaseParams(
+                            principalAmount,
+                            annualInterestRate,
+                            calculationPeriod,
+                            compoundInterval
+                        )
+                    )
+                    withContext(Dispatchers.Main) {
+                        navigationEffect.value = Event(NavigateToResultEffect(results))
+                    }
+                }
+                false -> withContext(Dispatchers.Main) { viewEffect.value = Event(ShowToastEffect) }
+            }
+
+
         }
     }
 
