@@ -11,8 +11,8 @@ android {
         applicationId "com.williams.vaughan.charlie.capitalcalc"
         minSdkVersion 23
         targetSdkVersion 29
-        versionCode 3
-        versionName "1.02"
+        versionCode 4
+        versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
