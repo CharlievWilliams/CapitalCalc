@@ -1,6 +1,7 @@
 package com.williams.vaughan.charlie.capitalcalc.usecases
 
 import java.math.BigDecimal
+import java.math.RoundingMode
 
 class RetrieveTotalAmountUseCase(
     private val convertStringsToUsableUseCase: ConvertStringsToUsableUseCase
@@ -19,16 +20,16 @@ private fun performCalculation(results: UsableUseCaseParams): UseCaseResults {
     with(results) {
         var total = principalAmount
         val percent = (BigDecimal(100).add(annualInterestRate)).divide(BigDecimal(100))
-        chartData.add(total.toFloat())
+        chartData.add(total.setScale(2, RoundingMode.HALF_EVEN).toFloat())
         while (year < calculationPeriod) {
             total = total.times(percent)
-            chartData.add(total.toFloat())
+            chartData.add(total.setScale(2, RoundingMode.HALF_EVEN).toFloat())
             year++
         }
 
         return UseCaseResults(
             true,
-            total.toString(),
+            total.setScale(2, RoundingMode.HALF_EVEN).toString(),
             calculationPeriod.toString(),
             chartData.toFloatArray()
         )

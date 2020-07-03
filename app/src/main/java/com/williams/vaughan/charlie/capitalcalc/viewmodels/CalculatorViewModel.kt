@@ -70,20 +70,26 @@ class CalculatorViewModel(
         )
 
         launch(Dispatchers.Default) {
-            val results = retrieveTotalAmountUseCase.execute(
-                RetrieveTotalAmountUseCaseParams(
-                    principalAmount,
-                    annualInterestRate,
-                    calculationPeriod,
-                    compoundInterval
-                )
-            )
-            withContext(Dispatchers.Main) {
-                when (results.success) {
-                    true -> navigationEffect.value = Event(NavigateToResultEffect(results))
-                    false -> viewEffect.value = Event(ShowToastEffect)
+            val isValid =
+                principalAmount.isNotEmpty() && annualInterestRate.isNotEmpty() && calculationPeriod.isNotEmpty()
+            when (isValid) {
+                true -> {
+                    val results = retrieveTotalAmountUseCase.execute(
+                        RetrieveTotalAmountUseCaseParams(
+                            principalAmount,
+                            annualInterestRate,
+                            calculationPeriod,
+                            compoundInterval
+                        )
+                    )
+                    withContext(Dispatchers.Main) {
+                        navigationEffect.value = Event(NavigateToResultEffect(results))
+                    }
                 }
+                false -> withContext(Dispatchers.Main) { viewEffect.value = Event(ShowToastEffect) }
             }
+
+
         }
     }
 

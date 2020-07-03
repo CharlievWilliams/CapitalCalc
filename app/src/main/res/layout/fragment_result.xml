@@ -13,11 +13,27 @@
         android:layout_marginStart="@dimen/large_margin"
         android:layout_marginEnd="@dimen/large_margin"
         android:layout_marginBottom="@dimen/large_margin"
-        app:layout_constraintBottom_toTopOf="@id/total_time_period_text_view"
+        app:layout_constraintBottom_toTopOf="@id/scrub_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        app:spark_animateChanges="true"
+        app:spark_lineColor="@color/colorAccent"
+        app:spark_scrubEnabled="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/scrub_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/total_time_period_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spark_view"
+        tools:text="Scrub value" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/total_time_period_text_view"
@@ -29,7 +45,7 @@
         app:layout_constraintBottom_toTopOf="@+id/total_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spark_view"
+        app:layout_constraintTop_toBottomOf="@id/scrub_text"
         tools:text="Title" />
 
     <androidx.appcompat.widget.AppCompatTextView
