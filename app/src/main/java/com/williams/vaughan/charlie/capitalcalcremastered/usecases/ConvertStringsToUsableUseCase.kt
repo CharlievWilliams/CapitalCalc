@@ -1,7 +1,7 @@
-package com.williams.vaughan.charlie.capitalcalc.usecases
+package com.williams.vaughan.charlie.capitalcalcremastered.usecases
 
-import com.williams.vaughan.charlie.capitalcalc.CompoundInterval
-import com.williams.vaughan.charlie.capitalcalc.CompoundInterval.ANNUALLY
+import com.williams.vaughan.charlie.capitalcalcremastered.CompoundInterval
+import com.williams.vaughan.charlie.capitalcalcremastered.CompoundInterval.ANNUALLY
 import java.math.BigDecimal
 
 class ConvertStringsToUsableUseCase {

@@ -1,4 +1,4 @@
-package com.williams.vaughan.charlie.capitalcalc.fragments
+package com.williams.vaughan.charlie.capitalcalcremastered.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,14 +8,14 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.robinhood.spark.SparkView.OnScrubListener
-import com.williams.vaughan.charlie.capitalcalc.MySparkAdapter
-import com.williams.vaughan.charlie.capitalcalc.R
-import com.williams.vaughan.charlie.capitalcalc.databinding.FragmentResultBinding
-import com.williams.vaughan.charlie.capitalcalc.extensions.observeEvent
-import com.williams.vaughan.charlie.capitalcalc.viewmodels.ResultViewModel
-import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultNavigationEffect.NavigateToCalculatorEffect
-import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultViewEvent.ReturnPressedEvent
-import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultViewEvent.ScreenLoadEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.MySparkAdapter
+import com.williams.vaughan.charlie.capitalcalcremastered.R
+import com.williams.vaughan.charlie.capitalcalcremastered.databinding.FragmentResultBinding
+import com.williams.vaughan.charlie.capitalcalcremastered.extensions.observeEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.viewmodels.ResultViewModel
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.ResultNavigationEffect.NavigateToCalculatorEffect
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.ResultViewEvent.ReturnPressedEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.ResultViewEvent.ScreenLoadEvent
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 

@@ -1,4 +1,4 @@
-package com.williams.vaughan.charlie.capitalcalc
+package com.williams.vaughan.charlie.capitalcalcremastered
 
 import android.app.Application
 import org.koin.android.ext.koin.androidContext

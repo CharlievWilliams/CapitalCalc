@@ -1,4 +1,4 @@
-package com.williams.vaughan.charlie.capitalcalc
+package com.williams.vaughan.charlie.capitalcalcremastered
 
 import com.robinhood.spark.SparkAdapter
 

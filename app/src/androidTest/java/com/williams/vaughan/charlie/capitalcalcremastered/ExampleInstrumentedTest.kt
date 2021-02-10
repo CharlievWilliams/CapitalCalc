@@ -1,4 +1,4 @@
-package com.williams.vaughan.charlie.capitalcalc
+package com.williams.vaughan.charlie.capitalcalcremastered
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

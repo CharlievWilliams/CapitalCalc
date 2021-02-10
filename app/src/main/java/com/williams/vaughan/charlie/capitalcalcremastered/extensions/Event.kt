@@ -1,4 +1,4 @@
-package com.williams.vaughan.charlie.capitalcalc.extensions
+package com.williams.vaughan.charlie.capitalcalcremastered.extensions
 
 open class Event<out T>(private val content: T) {
 

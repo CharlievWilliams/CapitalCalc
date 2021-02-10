@@ -1,4 +1,4 @@
-package com.williams.vaughan.charlie.capitalcalc.fragments
+package com.williams.vaughan.charlie.capitalcalcremastered.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import com.williams.vaughan.charlie.capitalcalc.R
-import com.williams.vaughan.charlie.capitalcalc.databinding.FragmentSplashBinding
-import com.williams.vaughan.charlie.capitalcalc.extensions.observeEvent
-import com.williams.vaughan.charlie.capitalcalc.viewmodels.SplashViewModel
-import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashNavigationEffect.NavigateToCalculatorEffect
-import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashViewEvent.ScreenLoadEvent
-import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashViewEvent.SplashButtonPressedEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.R
+import com.williams.vaughan.charlie.capitalcalcremastered.databinding.FragmentSplashBinding
+import com.williams.vaughan.charlie.capitalcalcremastered.extensions.observeEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.viewmodels.SplashViewModel
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.SplashNavigationEffect.NavigateToCalculatorEffect
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.SplashViewEvent.ScreenLoadEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.SplashViewEvent.SplashButtonPressedEvent
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 class SplashFragment : Fragment() {

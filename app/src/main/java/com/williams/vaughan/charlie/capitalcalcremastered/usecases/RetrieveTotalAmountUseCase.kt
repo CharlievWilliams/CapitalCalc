@@ -1,4 +1,4 @@
-package com.williams.vaughan.charlie.capitalcalc.usecases
+package com.williams.vaughan.charlie.capitalcalcremastered.usecases
 
 import java.math.BigDecimal
 import java.math.RoundingMode

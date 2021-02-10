@@ -1,4 +1,4 @@
-package com.williams.vaughan.charlie.capitalcalc.viewstates
+package com.williams.vaughan.charlie.capitalcalcremastered.viewstates
 
 data class SplashViewState(
     val isLoading: Boolean = true

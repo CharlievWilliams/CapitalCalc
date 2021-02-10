@@ -1,4 +1,4 @@
-package com.williams.vaughan.charlie.capitalcalc.extensions
+package com.williams.vaughan.charlie.capitalcalcremastered.extensions
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData

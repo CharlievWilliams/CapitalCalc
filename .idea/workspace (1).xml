@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8b2f75db-546e-4021-884d-0e8d9b196cd5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_29" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="navigationResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="C:\Users\cvwbu\Desktop\keystore.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/CharlievWilliams/CapitalCalc" />
+      </set>
+    </option>
+  </component>
+  <component name="KotlinCodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ProjectId" id="1dVclZ6cntKhxq2777mKBU8PWnn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="BundleExportedModule" value="app" />
+    <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
+    <property name="DEBUGGABLE_PROCESS" value="com.williams.vaughan.charlie.capitalcalc" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="ExportApk.ApkPath" value="C:\Users\cvwbu\Google Drive\CapitalCalc\app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../resubmission-brinkstock" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.williams.vaughan.charlie.capitalcalc.activities" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="ExampleUnitTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.williams.vaughan.charlie.capitalcalc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.williams.vaughan.charlie.capitalcalc" />
+      <option name="MAIN_CLASS_NAME" value="com.williams.vaughan.charlie.capitalcalc.ExampleUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleInstrumentedT..." type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.williams.vaughan.charlie.capitalcalc.ExampleInstrumentedTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.ExampleUnitTest" />
+        <item itemvalue="Android Instrumented Tests.ExampleInstrumentedT..." />
+        <item itemvalue="Android JUnit.ExampleUnitTest" />
+        <item itemvalue="Android Instrumented Tests.ExampleInstrumentedT..." />
+        <item itemvalue="Android JUnit.ExampleUnitTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b2f75db-546e-4021-884d-0e8d9b196cd5" name="Default Changelist" comment="" />
+      <created>1592513852769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592513852769</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Brought CapitalCalc into the 21st century&#10;&#10;* Separated logic to MVVP + ViewStates&#10;* Added extensions&#10;* Added dependencies&#10;* Converted activities to fragments&#10;* Created blank MainActivity.kt for nav graph&#10;* Converted all java to kotlin&#10;* Added dagger and hilt">
+      <created>1592517689528</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592517689528</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Set up nav graph">
+      <created>1592590018525</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592590018525</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Greatly simplify project&#10;&#10;* remove dagger&#10;* remove butterknife&#10;* Use ViewBindings&#10;* Get nav component working&#10;* Refactor layouts">
+      <created>1592677526332</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592677526334</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update permissions for workflow">
+      <created>1592681250137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592681250139</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix unit tests">
+      <created>1592681805498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592681805500</updated>
+    </task>
+    <task id="LOCAL-00006" summary="#1 Refactor fragment_calculator.xml&#10;&#10;* Simplify ViewStates&#10;* Rename all XML values">
+      <created>1592701667970</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592701667971</updated>
+    </task>
+    <task id="LOCAL-00007" summary="#1 Update String values">
+      <created>1592702000190</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592702000190</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implement koin">
+      <created>1592751815960</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592751815961</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implement calculator">
+      <created>1592761161485</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592761161485</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Setup toolbar and animations">
+      <created>1592766114338</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592766114338</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Implement coroutines properly">
+      <created>1592848216889</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1592848216890</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Konvert tests">
+      <created>1593267408878</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593267408878</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Change test name">
+      <created>1593267464727</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593267464727</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implement Spark charting">
+      <created>1593721218245</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1593721218245</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Simplify CalculatorViewModel.kt">
+      <created>1593774230660</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1593774230660</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update version">
+      <created>1593788275942</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1593788275942</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Brought CapitalCalc into the 21st century&#10;&#10;* Separated logic to MVVP + ViewStates&#10;* Added extensions&#10;* Added dependencies&#10;* Converted activities to fragments&#10;* Created blank MainActivity.kt for nav graph&#10;* Converted all java to kotlin&#10;* Added dagger and hilt" />
+    <MESSAGE value="Set up nav graph" />
+    <MESSAGE value="Greatly simplify project&#10;&#10;* remove dagger&#10;* remove butterknife&#10;* Use ViewBindings&#10;* Get nav component working&#10;* Refactor layouts" />
+    <MESSAGE value="Update permissions for workflow" />
+    <MESSAGE value="Fix unit tests" />
+    <MESSAGE value="#1 Refactor fragment_calculator.xml&#10;&#10;* Simplify ViewStates&#10;* Rename all XML values" />
+    <MESSAGE value="#1 Update String values" />
+    <MESSAGE value="Implement koin" />
+    <MESSAGE value="Implement calculator" />
+    <MESSAGE value="Setup toolbar and animations" />
+    <MESSAGE value="Implement coroutines properly" />
+    <MESSAGE value="Konvert tests" />
+    <MESSAGE value="Change test name" />
+    <MESSAGE value="Implement Spark charting" />
+    <MESSAGE value="Simplify CalculatorViewModel.kt" />
+    <MESSAGE value="Update version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update version" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Inspections" timestamp="1592676353671">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Inspections/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592676353671" />
+    <state x="751" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1593721790688">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="751" y="235" key="#com.intellij.ide.util.MemberChooser/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593721790688" />
+    <state x="539" y="48" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592517187325">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="48" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592517187325" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592676655226">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592676655226" />
+    <state x="702" y="172" width="519" height="696" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1592514766513">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="172" width="519" height="696" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592514766513" />
+    <state x="540" y="274" key="AndroidCreateResourceDirectoryDialog" timestamp="1592585470449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="274" key="AndroidCreateResourceDirectoryDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592585470449" />
+    <state x="540" y="274" key="AndroidCreateResourceFileDialog" timestamp="1592676147084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="274" key="AndroidCreateResourceFileDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592676147084" />
+    <state x="815" y="285" key="AndroidProcessChooserDialog" timestamp="1592764356509">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="815" y="285" key="AndroidProcessChooserDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592764356509" />
+    <state x="588" y="41" key="CommitChangelistDialog2" timestamp="1593788275093">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="588" y="41" key="CommitChangelistDialog2/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593788275093" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593788258565">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593788258565" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1596813078149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1596813078149" />
+    <state width="1877" height="388" key="GridCell.Tab.0.bottom" timestamp="1593774095439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="388" key="GridCell.Tab.0.bottom/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593774095439" />
+    <state width="1877" height="388" key="GridCell.Tab.0.center" timestamp="1593774095439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="388" key="GridCell.Tab.0.center/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593774095439" />
+    <state width="1877" height="388" key="GridCell.Tab.0.left" timestamp="1593774095439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="388" key="GridCell.Tab.0.left/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593774095439" />
+    <state width="1877" height="388" key="GridCell.Tab.0.right" timestamp="1593774095439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="388" key="GridCell.Tab.0.right/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593774095439" />
+    <state width="1877" height="84" key="GridCell.Tab.1.bottom" timestamp="1592683063287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="84" key="GridCell.Tab.1.bottom/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592683063287" />
+    <state width="1877" height="84" key="GridCell.Tab.1.center" timestamp="1592683063286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="84" key="GridCell.Tab.1.center/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592683063286" />
+    <state width="1877" height="84" key="GridCell.Tab.1.left" timestamp="1592683063286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="84" key="GridCell.Tab.1.left/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592683063286" />
+    <state width="1877" height="84" key="GridCell.Tab.1.right" timestamp="1592683063287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="84" key="GridCell.Tab.1.right/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592683063287" />
+    <state x="7" y="1" width="1856" height="1000" key="MergeDialog" timestamp="1592761069579">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="7" y="1" width="1856" height="1000" key="MergeDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592761069579" />
+    <state x="672" y="235" key="MultipleFileMergeDialog" timestamp="1592761069584">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="235" key="MultipleFileMergeDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592761069584" />
+    <state x="735" y="230" key="RollbackChangesDialog" timestamp="1593793511129">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="735" y="230" key="RollbackChangesDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593788311391" />
+    <state x="735" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593793511129" />
+    <state x="803" y="269" key="SettingsEditor" timestamp="1593793648058">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592684354140" />
+    <state x="803" y="269" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593793648058" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1593788397247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593788397247" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593788870779">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593788870779" />
+    <state x="506" y="255" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593774090098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="506" y="255" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593774090098" />
+    <state x="656" y="252" width="775" height="536" key="find.popup" timestamp="1593722694863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="252" width="775" height="536" key="find.popup/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593722694863" />
+    <state x="737" y="232" key="git4idea.branch.GitSmartOperationDialog" timestamp="1592760730043">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="737" y="232" key="git4idea.branch.GitSmartOperationDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592760730043" />
+    <state x="544" y="367" key="git4idea.ui.GitUnstashDialog" timestamp="1592760799799">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="544" y="367" key="git4idea.ui.GitUnstashDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592760799799" />
+    <state x="701" y="162" key="refactoring.ChangeSignatureDialog" timestamp="1592760085205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="701" y="162" key="refactoring.ChangeSignatureDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592760085205" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592765691207">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592765691207" />
+  </component>
+</project>

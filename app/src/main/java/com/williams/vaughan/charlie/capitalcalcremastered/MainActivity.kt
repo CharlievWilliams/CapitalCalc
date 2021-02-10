@@ -1,10 +1,10 @@
-package com.williams.vaughan.charlie.capitalcalc
+package com.williams.vaughan.charlie.capitalcalcremastered
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
-import com.williams.vaughan.charlie.capitalcalc.databinding.ActivityMainBinding
+import com.williams.vaughan.charlie.capitalcalcremastered.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,15 +1,15 @@
-package com.williams.vaughan.charlie.capitalcalc.viewmodels
+package com.williams.vaughan.charlie.capitalcalcremastered.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.williams.vaughan.charlie.capitalcalc.extensions.Event
-import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultNavigationEffect
-import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultNavigationEffect.NavigateToCalculatorEffect
-import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultViewEvent
-import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultViewEvent.ReturnPressedEvent
-import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultViewEvent.ScreenLoadEvent
-import com.williams.vaughan.charlie.capitalcalc.viewstates.ResultViewState
+import com.williams.vaughan.charlie.capitalcalcremastered.extensions.Event
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.ResultNavigationEffect
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.ResultNavigationEffect.NavigateToCalculatorEffect
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.ResultViewEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.ResultViewEvent.ReturnPressedEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.ResultViewEvent.ScreenLoadEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.ResultViewState
 
 class ResultViewModel : ViewModel() {
 

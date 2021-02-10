@@ -1,15 +1,15 @@
-package com.williams.vaughan.charlie.capitalcalc.viewmodels
+package com.williams.vaughan.charlie.capitalcalcremastered.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.williams.vaughan.charlie.capitalcalc.extensions.Event
-import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashNavigationEffect
-import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashNavigationEffect.NavigateToCalculatorEffect
-import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashViewEvent
-import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashViewEvent.ScreenLoadEvent
-import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashViewEvent.SplashButtonPressedEvent
-import com.williams.vaughan.charlie.capitalcalc.viewstates.SplashViewState
+import com.williams.vaughan.charlie.capitalcalcremastered.extensions.Event
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.SplashNavigationEffect
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.SplashNavigationEffect.NavigateToCalculatorEffect
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.SplashViewEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.SplashViewEvent.ScreenLoadEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.SplashViewEvent.SplashButtonPressedEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.SplashViewState
 
 class SplashViewModel : ViewModel() {
 

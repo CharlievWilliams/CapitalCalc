@@ -6,7 +6,7 @@
     app:startDestination="@id/splashFragment">
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.williams.vaughan.charlie.capitalcalc.fragments.SplashFragment"
+        android:name="com.williams.vaughan.charlie.capitalcalcremastered.fragments.SplashFragment"
         android:label="CapitalCalc"
         tools:layout="@layout/fragment_splash">
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/calculatorFragment"
-        android:name="com.williams.vaughan.charlie.capitalcalc.fragments.CalculatorFragment"
+        android:name="com.williams.vaughan.charlie.capitalcalcremastered.fragments.CalculatorFragment"
         android:label="Calculator"
         tools:layout="@layout/fragment_calculator">
         <action
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.williams.vaughan.charlie.capitalcalc.fragments.ResultFragment"
+        android:name="com.williams.vaughan.charlie.capitalcalcremastered.fragments.ResultFragment"
         android:label="Results"
         tools:layout="@layout/fragment_result">
         <argument

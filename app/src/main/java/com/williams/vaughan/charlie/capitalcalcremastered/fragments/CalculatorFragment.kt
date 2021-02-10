@@ -1,4 +1,4 @@
-package com.williams.vaughan.charlie.capitalcalc.fragments
+package com.williams.vaughan.charlie.capitalcalcremastered.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,15 +8,15 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import com.williams.vaughan.charlie.capitalcalc.R
-import com.williams.vaughan.charlie.capitalcalc.databinding.FragmentCalculatorBinding
-import com.williams.vaughan.charlie.capitalcalc.extensions.observeEvent
-import com.williams.vaughan.charlie.capitalcalc.usecases.UseCaseResults
-import com.williams.vaughan.charlie.capitalcalc.viewmodels.CalculatorViewModel
-import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorNavigationEffect.NavigateToResultEffect
-import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEffect.ShowToastEffect
-import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent.CalculateButtonPressed
-import com.williams.vaughan.charlie.capitalcalc.viewstates.CalculatorViewEvent.ScreenLoadEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.R
+import com.williams.vaughan.charlie.capitalcalcremastered.databinding.FragmentCalculatorBinding
+import com.williams.vaughan.charlie.capitalcalcremastered.extensions.observeEvent
+import com.williams.vaughan.charlie.capitalcalcremastered.usecases.UseCaseResults
+import com.williams.vaughan.charlie.capitalcalcremastered.viewmodels.CalculatorViewModel
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.CalculatorNavigationEffect.NavigateToResultEffect
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.CalculatorViewEffect.ShowToastEffect
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.CalculatorViewEvent.CalculateButtonPressed
+import com.williams.vaughan.charlie.capitalcalcremastered.viewstates.CalculatorViewEvent.ScreenLoadEvent
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 class CalculatorFragment : Fragment() {

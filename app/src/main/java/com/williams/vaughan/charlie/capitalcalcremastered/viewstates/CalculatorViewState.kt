@@ -1,6 +1,6 @@
-package com.williams.vaughan.charlie.capitalcalc.viewstates
+package com.williams.vaughan.charlie.capitalcalcremastered.viewstates
 
-import com.williams.vaughan.charlie.capitalcalc.usecases.UseCaseResults
+import com.williams.vaughan.charlie.capitalcalcremastered.usecases.UseCaseResults
 
 data class CalculatorViewState(
     private val principalAmount: String,
